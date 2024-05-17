@@ -84,3 +84,113 @@ img {
     width: 100%;
     height: 70%;
 }
+
+
+
+
+
+.contenedor_grid_secciones {
+    padding: 10px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr ;
+}
+
+
+.tamanio_imagen_portada {
+    width: 280px;
+    height: 170px;
+}
+
+
+
+
+/* ESTILOS PARA THOR */
+
+.fondo_thor {
+    background-image: url(../img/fondo_thor.jpg);
+    /* background-color: rgb(186, 24, 24); */
+}
+
+.portada_thor_1 {
+    background-image: url(../img/portada_thor_1_300x170.png);
+    background-size: 100% 100%;
+}
+
+.portada_thor_2 {
+    background-image: url(../img/portada_thor_2_300x188.jpg);
+    background-size: 100% 100%;
+}
+
+.portada_thor_3 {
+    background-image: url(../img/portada_thor_3_300x170.jpg);
+}
+
+.portada_thor_4 {
+    background-image: url(../img/portada_thor_4_300x170.jpg);
+}
+
+
+
+@media screen and (min-width: 550px) {
+
+    header {
+        flex-direction: row;
+    }
+
+    .tamanio_imagen_portada {
+        width: 500px;
+        height: 250px;
+    }
+
+    .portada_thor_1 {
+        background-image: url(../img/portada_thor_1_500x253.png);
+        background-size: cover;
+    }
+    
+    .portada_thor_2 {
+        background-image: url(../img/portada_thor_2_500x313.jpg);
+    }
+    
+    .portada_thor_3 {
+        background-image: url(../img/portada_thor_3_500x281.jpg);
+    }
+    
+    .portada_thor_4 {
+        background-image: url(../img/portada_thor_4_500x282.jpg);
+        background-size: cover;
+        background-position:bottom;
+    }
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .contenedor_grid_secciones {
+        grid-template-columns: 1fr 5fr;
+    }
+
+    .tamanio_imagen_portada {
+        width: 200px;
+        height: 300px;
+    }
+
+    .portada_thor_1 {
+        background-image: url(../img/portada_thor_1_210x300.jpg);
+    }
+
+    .portada_thor_2 {
+        background-image: url(../img/portada_thor_2_200x300.png)
+    }
+
+    .portada_thor_3 {
+        background-image: url(../img/portada_thor_3_210x300.jpg);
+    }
+
+    .portada_thor_4 {
+        background-image: url(../img/portada_thor_4_200x300.jpg);
+    }
+
+}
