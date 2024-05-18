@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -105,6 +106,33 @@ img {
 
 
 
+/* ESTILOS PARA IRONMAN */
+
+
+.banner_iron_man {
+    background-image: url(../img/fondo_iron_man.jpg);
+    background-size: 100% 100%;
+}
+
+
+.portada_ironman_1 {
+    background-image: url(../img/portada_iron_man_300x170.jpeg);
+    background-size: 100% 100%;
+}
+
+.portada_ironman_2 {
+    background-image: url(../img/portada_iron_man_2_300x170.png);
+    background-size: 100% 100%;
+}
+
+.portada_ironman_3 {
+    background-image: url(../img/portada_iron_man_3_300x187.jpeg);
+    background-size: 100% 100%;
+}
+
+
+
+
 /* ESTILOS PARA THOR */
 
 .fondo_thor {
@@ -143,6 +171,21 @@ img {
         height: 250px;
     }
 
+    .portada_ironman_1 {
+        background-image: url(../img/portada_iron_man_500x280.jpeg);
+        background-size: 100% 100%;
+    }
+    
+    .portada_ironman_2 {
+        background-image: url(../img/portada_iron_man_2_500x280.png);
+        background-size: 100% 100%;
+    }
+    
+    .portada_ironman_3 {
+        background-image: url(../img/portada_iron_man_3_500x300.jpeg);
+    }
+
+    
     .portada_thor_1 {
         background-image: url(../img/portada_thor_1_500x253.png);
         background-size: cover;
@@ -176,6 +219,22 @@ img {
         width: 200px;
         height: 300px;
     }
+
+    .portada_ironman_1 {
+        background-image: url(../img/portada_iron_man_200x300.jpg);
+        background-size: 100% 100%;
+    }
+    
+    .portada_ironman_2 {
+        background-image: url(../img/portada_iron_man_2_200x300.jpg);
+        background-size: 100% 100%;
+    }
+    
+    .portada_ironman_3 {
+        background-image: url(../img/portada_iron_man_3_200x300.jpg);
+        background-size: 100% 100%;
+    }
+
 
     .portada_thor_1 {
         background-image: url(../img/portada_thor_1_210x300.jpg);
