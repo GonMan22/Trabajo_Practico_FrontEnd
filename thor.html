@@ -8,6 +8,9 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     
+    <!-- Javascript de FontAwesome -->
+    <script src="https://kit.fontawesome.com/0aaac06757.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="estructura_html">
@@ -173,10 +176,89 @@
 
     </main>
 
-    <footer>
+
+    <footer class="flexbox">
+
+
+        <section>
+            <p>Dejanos tu opinion sobre alguna pelicula</p>
+            <form class="margen fuente_white" id="formulario_opinion">
+
+                <div class="margen">
+                    <label for="nombre_input">Nombre : </label>
+                    <input class="fondo_gris fuente_white" type="text" name="nombre_input" id="nombre_input">
+                </div>
+
+                <div class="error_nombre"></div>
+                
+                <div class="margen">
+                    <label for="campo_opinion"> Opinion : </label>
+                    <div>
+                        <textarea class="fondo_gris fuente_white" name="campo_opinion" id="campo_opinion" rows="10" cols="40" style="resize: none;"></textarea>
+                    </div>
+                </div>
+
+                <div class="error_opinion"></div>
+
+                <button class="margen" type="submit">Enviar</button>
+
+            </form>
+
+
+        </section>
+
+        <section>
+
+            <p>¿Te gustaria recibir notificaciones sobre nuevas peliculas?</p>
+            <p>Dejanos tu email</p>
+            <form id="formulario_email">
+
+                <div class="margen">
+                    <label for="campo_email"></label>
+                    <input class="fondo_gris fuente_white tamanio_input" type="text" name="campo_email" id="campo_email">
+                </div>
+
+                <div class="error_email"></div>
+
+                <button class="margen" type="submit">Comenzar</button>
+
+            </form>
+
+            <label for="superheroe_de_interes"><p>¿Que superheroe te resulto interesante?</p></label>
+            <select class="margen" name="superheroe_de_interes" id="superheroe_de_interes" required>
+                <option value=""></option>
+                <option value="1" selected>Iron Man</option>
+                <option value="2">Capitan America</option>
+                <option value="3">Thor</option>
+            </select>
+
+        </section>
+
+
+        <section>
+            <p>Redes Sociales</p>
+            <ul class="margen">
+                <li style="margin-bottom: 1.5em;">
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                    <a class="enlace_instagram" href="https://www.instagram.com/marvel/?hl=es" target="_blank">@marvel</a>
+                </li>
+                <li style="margin-bottom: 1.5em;">
+                    <i class="fa-brands fa-facebook fa-2xl"></i>
+                    <a class="enlace_facebook" href="https://web.facebook.com/Marvel?_rdc=1&_rdr" target="_blank">Marvel</a>
+                </li>
+
+                <li style="margin-bottom: 1.5em;">
+                    <i class="fa-brands fa-x-twitter fa-2xl"></i>
+                    <a href="https://x.com/marvel" target="_blank">Marvel Entertainment</a>
+                </li>
+
+            </ul>
+        </section>
 
     </footer>
 
+
+    <script src="./js/script.js"></script>
     
 </body>
 </html>

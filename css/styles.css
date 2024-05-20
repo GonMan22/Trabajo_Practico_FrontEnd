@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri;
+    font-weight: 600;
 }
 
 
@@ -48,10 +50,9 @@ header {
 
 
 .estructura_html{
-    background-color: blue;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 90px 1fr 100px;
+    grid-template-rows: 90px 1fr auto;
     grid-template-areas:
         "header"
         "main"
@@ -67,8 +68,10 @@ main {
 
 
 footer {
+    background-color:rgb(0, 0, 0);
     padding: .5em;
     grid-area: footer;
+    flex-wrap: wrap;
 }
 
 
@@ -133,11 +136,34 @@ img {
 
 
 
+/* ESTILOS PARA CAPITAN */
+
+.fondo_capitan {
+    background-image: url(../img/fondo_capitan.jpg);
+    background-size: cover;
+}
+
+.portada_capitan_1 {
+    background-image: url(../img/portada_capitan_300x170.png);
+    background-size: 100% 100%;
+}
+
+.portada_capitan_2 {
+    background-image: url(../img/portada_capitan_2_300x175.jpg);
+    background-size: 100% 100%;
+}
+
+.portada_capitan_3 {
+    background-image: url(../img/portada_capitan_3_300x165.jpg);
+}
+
+
+
+
 /* ESTILOS PARA THOR */
 
 .fondo_thor {
     background-image: url(../img/fondo_thor.jpg);
-    /* background-color: rgb(186, 24, 24); */
 }
 
 .portada_thor_1 {
@@ -205,6 +231,18 @@ img {
         background-position:bottom;
     }
 
+    .portada_capitan_1 {
+        background-image: url(../img/portada_capitan_500x281.png);
+    }
+    
+    .portada_capitan_2 {
+        background-image: url(../img/portada_capitan_2_500x292.jpg);
+    }
+    
+    .portada_capitan_3 {
+        background-image: url(../img/portada_capitan_3_500x271.jpg);
+    }
+
 }
 
 
@@ -252,4 +290,75 @@ img {
         background-image: url(../img/portada_thor_4_200x300.jpg);
     }
 
+
+    .portada_capitan_1 {
+        background-image: url(../img/portada_capitan_200x300.jpg);
+    }
+    
+    .portada_capitan_2 {
+        background-image: url(../img/portada_capitan_2_200x300.jpg);
+    }
+    
+    .portada_capitan_3 {
+        background-image: url(../img/portada_capitan_3_200x300.jpg);
+    }
+
+}
+
+
+.margen {
+    margin: 0.5em;
+}
+
+.fondo_gris {
+    background-color: #393939;
+}
+
+.fuente_white {
+    color: white;
+}
+
+button {
+    width: 100px;
+}
+
+.tamanio_input {
+    width: 85%;
+    height: 30px;
+}
+
+
+/* Usar el important! */
+footer.flexbox {
+    justify-content: space-around;
+}
+
+
+i.fa-brands.fa-instagram.fa-2xl {
+    color:#ff0080;
+}
+
+i.fa-brands.fa-facebook.fa-2xl {
+    color:#0000ff;
+}
+
+i.fa-brands.fa-x-twitter.fa-2xl {
+    color:#ffffff;
+}
+
+
+.enlace_instagram:hover {
+    color:#d13483;
+}
+
+.enlace_facebook:hover {
+    color:#0000ff;
+}
+
+
+.error_nombre,
+.error_opinion,
+.error_email {
+    text-align: center;
+    color:red;
 }
